@@ -1,0 +1,42 @@
+object RenameAccountForm: TRenameAccountForm
+  Left = 744
+  Height = 93
+  Top = 713
+  Width = 278
+  ActiveControl = Input
+  BorderStyle = bsToolWindow
+  Caption = 'Change Account Name'
+  ClientHeight = 93
+  ClientWidth = 278
+  PopupMode = pmExplicit
+  PopupParent = MainForm.Owner
+  Position = poOwnerFormCenter
+  ShowInTaskBar = stNever
+  LCLVersion = '2.3.0.0'
+  object Input: TLabeledEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 8
+    Height = 32
+    Top = 24
+    Width = 262
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Left = 8
+    BorderSpacing.Right = 8
+    EditLabel.Height = 18
+    EditLabel.Width = 262
+    EditLabel.Caption = 'New Account Name'
+    TabOrder = 0
+    OnKeyPress = InputKeyPress
+  end
+  object ApplyButton: TButton
+    Left = 8
+    Height = 25
+    Top = 56
+    Width = 88
+    Caption = 'Apply'
+    ModalResult = 1
+    TabOrder = 1
+  end
+end

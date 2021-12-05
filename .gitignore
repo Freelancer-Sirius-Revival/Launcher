@@ -1,0 +1,8 @@
+lib
+backup
+*.lps
+*.bak
+*.bat
+*.sh
+*.exe
+/FLSR-Launcher.ini
